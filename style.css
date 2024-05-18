@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+header
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: hsl(32.7, 26.8%, 92%);
+    margin-bottom: -10px;
+    
+}
+form
+{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+
+}
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('images/search.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  input[type=text]:focus {
+    width: 20%;
+  }
+#losi
+{
+    /* background-color: hsl(271, 91%, 69%); */
+    display:flex ;
+    justify-content: flex-end;
+    margin-top: -70px;
+}
+#losi > button
+{
+    width: 60px;
+    background-color: hsl(32.7, 26.8%, 92%);
+    text-align: center;
+    font: 1.5em sans-serif;
+    border: none;
+    border-radius: 2px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    
+    
+
+}
+#losi > button:hover
+{
+    background-color: hsl(30, 12%, 78%);
+    cursor: pointer;
+    transition:all 750ms ease 0s;
+}
+#mybtn1
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+
+}
+#mybtn1 > button
+{
+    display: flex;
+    padding: 10px 10px;
+    font-size: 1.1em;
+    margin-right: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px 0.1px;
+    background-color: hsl(0, 0%, 95%);
+    cursor: pointer;
+    
+}
+#mybtn1 > button:hover
+{
+    background-color: hsl(0, 0%, 88%);
+}
+#cart
+{
+    display: flex;
+
+    padding-right: 15px;
+    font-size: 1.9em;
+    text-align: center;
+    
+}
+#nav1
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5px;
+    /* background-color: hsl(182, 25%, 50%); */
+    
+}
+#nav1 ul
+{
+    display: flex;
+    width: 100%;
+    font-size: large;
+    /*background-color: hsl(182, 88%, 48%);*/
+    justify-content: flex-start;
+    align-items: end;
+    
+}
+#nav1 li
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 5px;    
+    padding-right: 10px;
+}
+#nav1 a
+{
+    color: hsl(206, 100%, 38%);
+    border: 5px;
+}
+#nav1 a:active
+{
+    color: hsl(112, 89%, 60%);
+}
+#nav1 a:hover
+{
+    color: hsl(200, 26%, 27%);
+}
+#nav2
+{
+    background-color: hsl(214, 99%, 37%);
+    border-radius: 5px;
+}
+
+#nav2 a
+{
+    color: white;
+       
+}
+#nav2 button
+{
+    display: flex;
+    background-color: hsl(214, 99%, 37%);
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-right: 1px solid hsl(214, 89%, 46%);;
+    border-collapse: collapse;
+    border-radius: 2px;
+}
+#nav2 button:hover
+{
+    background-color: hsl(214, 61%, 47%);
+}
+
+.mynav ul 
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    list-style-type: none;
+    padding: 0;
+}
+.mynav a
+{
+    text-decoration: none;
+}
+@media(min-width:500px)
+{
+    .mynav ul
+    {
+        flex-direction: row;
+    }
+
+}
+
+.container
+{
+    /* background-color: hsl(0, 26%, 97%); */
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 2em;
+    width: auto;
+    overflow: auto;
+}
+aside
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-wrap: wrap;
+    align-content: space-between;
+    gap: 1.5em;
+    /* background-color: hsl(0, 26%, 96%); */
+    width: 15%;    
+    
+}
+#asSec1
+{
+    display: flex;
+    border: 1px solid hsl(0, 26%, 95%) ;
+    flex-direction: column;
+    flex: 1;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 10px;
+    margin-bottom: -20px;
+    border: 1px solid hsl(0, 26%, 95%) ;
+    /* overflow: hidden; */
+    margin-top: 40px;
+}
+
+#asSec1 h2
+{
+    text-align: center;
+    border-collapse: collapse;
+    border-bottom: 1px solid hsl(0, 1%, 66%);
+    border-top: 1px solid hsl(0, 1%, 60%);
+    border-radius: 2px;
+    /* padding: 5px; */
+  
+    background-color: hsla(0, 14%, 99%, 0.57);
+
+
+}
+#asSec1 ul
+{
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+#asSec1 li
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    font-size: 18px;
+    width: auto;
+    border-bottom: 1px solid hsl(201, 79%, 72%);
+}
+#asSec2 h2
+{
+    text-align: center;
+    border-collapse: collapse;
+    border-bottom: 1px solid hsl(0, 1%, 66%);
+    border-top: 1px solid hsl(0, 1%, 60%);
+    border-radius: 2px;
+    padding: 5px;
+    background-color: hsla(0, 14%, 99%, 0.57);
+
+
+}
+#asSec2
+{
+    margin-top: 20px;
+    width:auto;
+    display: flex;
+    border: 1px solid hsl(0, 26%, 95%) ;
+    flex-direction: column;
+    flex: 1;
+    flex-wrap: wrap;
+    margin-right: 10px;
+
+    
+}
+#asSec2 img
+{
+    width: 150px;
+    padding: 30px 20px;
+    margin: auto;
+    border-collapse: collapse;
+    /* border: 1px solid hsl(0, 26%, 91%); */
+}
+
+aside a
+{
+    text-decoration: none;
+}
+main
+{
+    /* background-color: hsl(0, 26%, 96%); */
+    border-radius: 4px;
+    border: 1px solid  hsl(0, 26%, 98%);
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-right: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+
+}
+section
+{
+    width: 100%;
+    
+
+}
+main > section img
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+main > div
+{
+    background-color: hsl(0, 26%, 99.5%);
+    gap: 2em;
+    /* margin-top: 50px; */
+    padding: 15px 20px;
+    border-radius: 10px;
+    border-collapse: collapse;
+    border: 1px solid  hsl(0, 26%, 91%);
+    width: 100%;
+    
+}
+
+#Msection2
+{
+    box-shadow: 0 0 5px 0.5;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+#Msection2 img
+{
+    width: 200px;
+    padding: 20px 20px;
+    border-collapse: collapse;
+    border: 1px solid hsl(0, 26%, 91%);
+    display: flex;
+    flex-direction: row;
+    
+}
+#Msection2 h2
+{
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    flex: 1;
+    border: 1px solid bisque;
+    justify-content: center;
+    text-align: center;
+    border-collapse: collapse;
+    border-bottom: 1px solid hsl(0, 1%, 66%);
+    border-top: 1px solid hsl(0, 1%, 60%);
+    border-radius: 2px;
+    /* padding: 5px; */
+  
+    background-color: hsla(0, 14%, 99%, 0.57);
+
+}
+footer
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+#footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items:center;
+}
+#exp
+{
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+/* here is my page 2 related css */
+
+.mainpg2
+{
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1em;
+
+}
+a
+{
+    text-decoration: none;   
+}
+.mainpg2 ul
+{
+    display: flex;
+    flex-direction: column;
+}
+.mainpg2 li
+{
+    padding: 4px 5px;
+}
+
+#pg2h1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+#div2
+{
+    padding-top: 30px;
+
+}
+#pwrl 
+{
+    padding-right: 200px;
+}
+#cp 
+{
+    padding-right: 50px;
+}
+
+
+#gp
+{
+    padding-right: 50px;
+
+}
+#mb
+{
+    padding-right: 50px;
+
+}
+#section1
+{
+    display: flex;
+    /* background-color: aqua; */
+    flex-direction: row;
+    flex: 1;
+    flex-wrap: wrap;
+    
+}
+#prdctimg
+{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* background-color: blueviolet; */
+    width: 40%;
+
+}
+#prdcdtl
+{
+    /* background-color: brown; */
+    width: 60%;
+    flex-direction: column;
+    padding: 20px;
+
+}
+.prtitle 
+{
+    margin-bottom: 14px;
+    color: rgb(17, 144, 207);
+}
+.pdc
+{
+    padding-bottom: 30px;
+    font-weight: bold;
+    color: #ccc;
+}.avlbt
+{
+    color: #ccc;
+    padding-bottom: 20px;
+}
+.stock
+{
+    font-size: 1.7em;
+    padding-left: 30px;
+    color: hsl(84, 100%, 59%);
+    font-weight: bold;
+}
+.prc
+{
+    background-color: hsla(0, 0%, 80%, 0.551);
+    padding: 10px;
+    width: 400px;
+    text-align: center;
+    color: rgb(17, 144, 207);
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    
+
+}
+.star-rating
+{
+    border-collapse: collapse;
+    border: 1px solid hsla(0, 0%, 80%, 0.551);
+    margin-top: 10px;
+    padding-bottom: 30px;
+    padding-top: -20px;
+
+    
+}
+.btns
+{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.fbbtn
+{
+    margin-right: 15px;
+    border: none;
+    border-radius: 10px;
+    padding: 4px;
+    background-color: hsla(205, 100%, 87%, 0.881);
+}
+.othbtn
+{
+    margin-left: 150px;
+    margin-right: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.shrbtn
+{
+    border: none;
+    padding: 4px;
+    background-color: white;
+    cursor: pointer;
+    
+}
+
+input[type=number]
+{
+    width: 60px;
+}
+.cartbtn
+{
+    margin-left: 10px;
+    background-color: hsl(213, 81%, 55%);
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 10px;
+    border-collapse: collapse;
+    cursor: pointer;
+}
+.fa-regular.fa-heart
+{
+    margin-left: 10px;
+    font-size: 1.6em;
+    padding: 3px;
+    cursor: pointer;
+    color: rgb(17, 144, 207);
+    
+    
+}
+.fa-regular.fa-heart:hover
+{
+    transition: 700ms;
+    color: hsl(0, 81%, 58%);
+    font-weight: bold;
+}
+
+.fa-regular.fa-thumbs-up
+{
+    margin-left: 10px;
+    font-size: 1.6em;
+    padding: 3px;
+    cursor: pointer;
+    color: rgb(17, 144, 207);
+}
+.fa-regular.fa-thumbs-up:hover
+{
+    transition: 700ms;
+    color: rgb(17, 144, 207);
+    font-weight: bold;
+}
+.fa-brands.fa-google-plus-g
+{
+    padding: 5px;
+    border: 1px solid hsla(0, 0%, 50%, 0.285);
+    font-size: 1.3em;
+    
+
+}
+.fa-solid.fa-share
+{
+    padding: 3px;
+
+}
+.rev
+{
+    padding-left: 200px;
+    display: inline-block;
+    
+}
+
+#prdctH
+{
+    /* background-color: yellow; */
+    display: flex;
+    border: 5px solid hsla(0, 23%, 97%, 0.972);
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 15px;
+
+}
+
+.star-rating label::before {
+    content: '★';
+  }
+  .star-rating input[type="checkbox"] {
+    display: none;
+  }
+  .star-rating label {
+    font-size: 2em;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+.star-rating label:hover::before,
+.star-rating label:hover ~ label::before 
+{
+      color: gold;
+}
+.star-rating input[type="checkbox"]:checked ~ label::before {
+    color: gold;
+  }
+#des, #rev, #tags {
+    display: none;
+}
+#des:target, #rev:target, #tags:target {
+    display: flex;
+}
+
+#img1
+{
+    border: 1px solid hsl(0, 26%, 91%);
+
+}
+.bestseler
+{
+    display:flex;
+    flex-direction:column;
+    flex: 1;
+}
+.txtunbstp
+{
+    margin: auto;
+}
+.spn1
+{
+    margin: auto;
+    color: rgb(17, 144, 207);
+    font-weight: bold;
+}
