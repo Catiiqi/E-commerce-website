@@ -1,4 +1,4 @@
-# Here is my Summary of discussing on what have been learned [My website link](https://catiiqi.github.io/Lab3/).
+# Here is my Summary of discussing on what have been learned [My website link](https://catiiqi.github.io/E-commerce-website/).
 #### During this exercise
 i created and analyzed three interconnected HTML pages for an e-commerce website: 
 the Home page and the Product Categories page, and Product details.
